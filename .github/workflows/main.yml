@@ -43,4 +43,4 @@ jobs:
         run: sudo npm install -g surge
         
       - name: deploying on surge
-        run: sudo surge ./build bootcamp_react_class2_example.surge.sh/ ${{secrets.SURGE_TOKEN}}
+        run: sudo surge ./build bootcamp_react_class2_example.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
